@@ -20,7 +20,7 @@ new_array
 end 
 
 def printer(attendees)
-  batch_badge_creator(name)
+  batch_badge_creator(attendees)
   assign_rooms(speakers)
 end
 
