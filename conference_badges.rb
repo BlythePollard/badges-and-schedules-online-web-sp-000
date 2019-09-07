@@ -22,7 +22,9 @@ end
 def printer(attendees)
   batch_badge_creator(attendees).each do |badges|
     puts "#{badges}"
-  assign_rooms(speakers)
+  assign_rooms(speakers).each do |assignment|
+    puts "#{assignment}"
+end
 end
 
 #The method `printer` should output first the results of the batch_badge_creator method and then of the assign_rooms method to the screen - this way you can output the badges and room assignments one at a time.
